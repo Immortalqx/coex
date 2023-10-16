@@ -4,11 +4,11 @@ precision: 32
 
 ###########################################################
 training:
-  load_version: null
-  save_version: 0
+  load_version: 0
+  save_version: 1
 
-  lr: 0.0005
-  sceneflow_max_epochs: 160
+  lr: 0.0008
+  sceneflow_max_epochs: 80
   sceneflow_milestones: [ 7 ]
   sceneflow_gamma: 0.1
   kitti_max_epochs: 800
