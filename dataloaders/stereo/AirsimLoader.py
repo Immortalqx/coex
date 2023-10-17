@@ -57,6 +57,9 @@ def read_pfm(file):
     # DEY: I don't know why this was there.
     file.close()
 
+    # 限制深度的最大值，TODO 这里手动写一下吧，以后可以写到配置文件里
+    data = np.clip(data, 0, 30)
+
     return data, scale
 
 
